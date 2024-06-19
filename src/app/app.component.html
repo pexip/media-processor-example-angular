@@ -1,0 +1,17 @@
+<main class="main">
+  <select (change)="handleChangeEffect($event)">
+    <option value="none">
+      No Effect
+    </option>
+    <option value="blur">
+      Blur Effect
+    </option>
+    <option value="overlay">
+      Background Replacement Effect
+    </option>
+  </select>
+  <video [srcObject]="processedStream" autoplay playsInline></video>
+</main>
+
+
+<router-outlet />
